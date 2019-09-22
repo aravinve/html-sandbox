@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Sandbox</title>
+</head>
+<body>
+    <a href="index.html"><h2>Go Back</h2></a>
+    <hr>
+    <h2>Basic Form</h2>
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>Personal Information:</legend><br>
+            First Name: <br>
+            <input type="text" name="firstname"><br><br>
+            Last Name: <br>
+            <input type="text" name="lastname"><br><br>
+            Gender: <br>
+            <input type="radio" name="gender" value="male" checked> Male
+            <br>
+            <input type="radio" name="gender" value="female"> Female
+            <br>
+            <input type="radio" name="gender" value="other"> Other
+            <br><br>
+            <select name="foodtype">
+                <option value="veg" selected>Veg</option>
+                <option value="nonveg">Non-Veg</option>
+            </select>
+            <br><br>
+            <select name="snacks" multiple>
+                <option value="drinks">Cold Drinks</option>
+                <option value="sweets">Sweets</option>
+                <option value="icecream">Ice Cream</option>
+            </select>
+            <br><br>
+            <textarea name="message" rows="10" cols="30">Enter your review here!</textarea>
+            <br><br>
+            <button type="button" onclick="alert('Hello World!')">Test Button</button>
+            <br><br>
+            Options List:
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Safari"></option>
+            </datalist>
+            <br><br>
+            Password: <input type="password" name="password">
+            <br><br>
+            <input type="checkbox" name="vippass" value="vippass">VIP Pass
+            <br><br>
+            Color: <input type="color" name="favcolor">
+            <br><br>
+            DOB: <input type="date" name="dob">
+            <br><br>
+            DOB Time: <input type="datetime-local" name="bdaytime">
+            <br><br>
+            Email: <input type="email" name="email">
+            <br><br>
+            Upload: <input type="file" name="myfile">
+            <br><br>
+            DOB Month: <input type="month" name="bdaymonth">
+            <br><br>
+            DOB Week: <input type="week" name="bdayweek">
+            <br><br>
+            Quantity: <input type="number" name="quantity">
+            <br><br>
+            Range: <input type="range" name="points">
+            <br><br>
+            Search: <input type="search" name="search">
+            <br><br>
+            Phone: <input type="tel" name="phone">
+            <br><br>
+            Time: <input type="time" name="time">
+            <br><br>
+            URL: <input type="url" name="homepage">
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </fieldset>
+    </form>
+    <hr>
+    <h2>Form Attributes</h2>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Personal Information:</legend><br>
+            First Name: <br>
+            <input type="text" name="firstname" size="10"><br><br>
+            Last Name: <br>
+            <input type="text" name="lastname" readonly><br><br>
+            Gender: <br>
+            <input type="radio" name="gender" value="male" checked> Male
+            <br>
+            <input type="radio" name="gender" value="female"> Female
+            <br>
+            <input type="radio" name="gender" value="other"> Other
+            <br><br>
+            <select name="foodtype" disabled>
+                <option value="veg" selected>Veg</option>
+                <option value="nonveg">Non-Veg</option>
+            </select>
+            <br><br>
+            Last Name: <br>
+            <input type="text" name="lastname" disabled><br><br>
+            Email:
+            <input type="email" autocomplete="off">
+            <br><br>
+            Focus Email:
+            <input type="email" autofocus>
+            <br><br>
+            Quantity:
+            <input type="number" min="1" max="5">
+            <br><br>
+            Select Files:
+            <input type="file" name="multiplefiles" multiple>
+            <br><br>
+            Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+            <br><br>
+            Last Name: <br>
+            <input type="text" name="lastname" placeholder="enter lastname"><br><br>
+            Last Name: <br>
+            <input type="text" name="lastname" required><br><br>
+            Steps Input: <input type="number" name="points" step="3">
+        </fieldset>
+    </form>
+    
+</body>
+</html>
